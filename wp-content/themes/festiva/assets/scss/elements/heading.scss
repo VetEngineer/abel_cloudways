@@ -1,0 +1,65 @@
+.pxl-heading{
+	.pxl-heading--inner{
+
+		//Style color 1
+		.pxl-item--title.pxl-color-style-1 , .pxl-title--typewriter 	
+		{
+			@include text-gradient-button(180deg, $primary_color, #8E7CB3);
+		}
+		.pxl-indentation{
+			position: relative;
+			display: flex;
+			align-items: center;
+			&:before{
+				content: '';
+				width: 25px;
+				height: 2px;
+				background: #2562FF;
+				margin-right: 20px;
+			}
+		}
+
+
+		//Style Divider 1
+		.style_divider_1{
+			&.pxl-item--title{
+				padding-bottom: 15px;
+			}
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 27.065px;
+				height: 2.706px;
+				background: linear-gradient(0deg, $gradient_color_from 0%, $gradient_color_to 100%);
+				border-radius: 100px;
+			}
+		}
+
+
+		//Style color 2
+		.pxl-color-style-2{
+			font-family: "Plus Jakarta Sans";
+			font-size: 62px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 100%;
+			color: transparent;
+			-webkit-text-stroke: 1px #FF2883;
+			
+
+		}
+
+		.pxl-color-style-3{
+			color: var(--yellow, #FCBE00);
+			font-family: "Bebas Neue";
+			font-size: 64px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1;
+		}
+	}
+}
+

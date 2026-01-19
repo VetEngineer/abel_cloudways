@@ -1,0 +1,77 @@
+.fs-17 {
+    font-size: 17px;
+}
+.lt-4 {
+    letter-spacing: -0.03em !important;
+}
+#wpbody #elementor-editor {
+	height: 100px;
+}
+.postbox-container #slider_revolution_metabox {
+	display: none;
+}
+.postbox-container .redux-wrap-div .redux-container {
+	overflow: visible
+}
+.elementor-control-type-layoutcontrol .radio-image-item {
+	border: 2px solid rgba(26,161,241, 0.4);
+	position: relative;
+}
+.elementor-control-type-layoutcontrol .radio-image-item span {
+	width: 30px;
+	height: 30px;
+	background-color: rgba(26,161,241, 0.4);
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 0 0 0 20px;
+	font-weight: 700;
+	display: block !important;
+}
+.elementor-control-type-layoutcontrol .radio-image-item.selected,
+.elementor-control-type-layoutcontrol .radio-image-item:hover {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.12);
+	border: 2px solid rgba(26,161,241, 1);
+}
+.elementor-control-type-layoutcontrol .radio-image-item.selected span,
+.elementor-control-type-layoutcontrol .radio-image-item:hover span {
+	background-color: rgba(26,161,241, 1);
+	color: #fff;
+}
+.pxl-postbox .icons-selector .fip-box {
+	width: 100px;
+	height: 50px;
+	line-height: 48px;
+	font-size: 22px;
+}
+.elementor-control-type-repeater.elementor-repeater-has-minimum-rows .elementor-repeater-tool-remove{
+  display: table-cell !important;
+}
+.wp-list-table.plugins .go_premium {
+	display: none !important;
+}
+#elementor-icons-manager__tab__wrapper #elementor-icons-manager__tab__content {
+	grid-template-columns: repeat(5,1fr);
+}
+#elementor-icons-manager__tab__wrapper #elementor-icons-manager__tab__content .elementor-icons-manager__tab__item__icon {
+	font-size: 38px;
+}
+.icons-selector .fip-box i:not(.fab) {
+	font-family: "Font Awesome 5 Pro";
+}
+
+.redux-container .redux-main img#image_logo_m {
+	max-height: 80px;
+}
+
+#elementor-icons-manager__sidebar .elementor-icons-manager__tab-link {
+	display: inline-flex;
+	width: 100%;
+	align-items: center;
+}
+.redux-container .redux-main img {
+    max-width: 300px !important;
+}

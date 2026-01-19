@@ -1,0 +1,139 @@
+.pxl-image-single{
+	&.style-button{
+		.pxl-item--inner{
+			position: relative;
+			.btn-image{
+				position: absolute;
+				content: '';
+				top: 50%;
+				left: -104px;
+				width: 209px;
+				height: 209px;
+				transform:translateY(-50%);
+				color: $primary_color;
+				
+				
+				font-family: "Plus Jakarta Sans";
+				font-size: 28px;
+				font-weight: 800;
+				line-height: 120%;
+
+				@media #{$max-lg}{
+					top: unset;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 35px;
+					font-size: 18px;
+					padding: 15px;
+					width: 60%;
+					height: auto;
+				}
+				a{
+					position: relative;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					text-align: center;
+					align-items: center;
+					justify-content: center;
+					z-index: 99;
+					@media #{$max-lg}{
+						line-height: 50px !important;
+					}
+					&:after, &:before{
+						position: absolute;
+						content: '';
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+						background: linear-gradient(180deg, #E100A8 0%, #71009C 100%);
+						transition: all 0.3s linear;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						z-index: -1;
+						@media #{$max-lg}{
+							border-radius: 50px;
+						}
+					}
+					&:before{
+						background: #dae1e3;
+						opacity: 0;
+					}
+					&:hover{
+						&:after{
+							opacity: 0;
+							width: 0;
+							height: 0;
+						}
+						&:before{
+							opacity: 1;
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+
+				
+			}
+		}
+	}
+
+
+
+
+
+	//Style Hover 1
+	&.style-hover-style-1{
+		.pxl-item--inner .pxl-item--image {
+			overflow: hidden;
+			img{
+				transition: all 0.25s ease-in-out;
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+
+
+
+//Image Carousel
+	//Layout 1
+	.pxl-image-carousel{
+		&.pxl-image-carousel1{
+			.pxl-carousel-inner{
+				.pxl-swiper-wrapper{
+					align-items: center;
+					.pxl-swiper-slide{
+						.pxl-item--inner{
+							overflow: hidden;
+
+							img{
+								transition : all 0.3s linear;
+							}
+						}
+						
+						&:nth-child(odd){
+							img{
+								height: 364px;
+								@media #{$max-sm}{
+									height: auto;
+								}
+							}
+						}
+
+						&:hover{
+							img{
+								transform: scale(1.1);
+								@media #{$max-sm}{
+									transform: scale(1);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}

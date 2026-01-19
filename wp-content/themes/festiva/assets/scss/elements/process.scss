@@ -1,0 +1,40 @@
+.pxl-process.pxl-process1{
+	//Style 1
+	&.style-1{
+		.pxl-item--inner{
+			display: flex;
+			gap: 22px;
+			.pxl-item--step{
+				width: 35px;
+				min-width: 35px;
+				height: 35px;
+				line-height: 35px;
+				background: linear-gradient(180deg, #35244A 0%, #17112B 100%);
+				text-align: center;
+				border-radius: 50%;
+				font-family: "Plus Jakarta Sans";
+				font-size: 16px;
+				color: $primary_color;
+				font-weight: 700;
+			}
+			.content-right{
+				.pxl-item--title{
+					font-family: "Plus Jakarta Sans";
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 1.4;
+					margin-bottom: 18px;
+				}
+				.pxl-item--description{
+					font-family: 'Inter';
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 1.6;
+					color: $primary_color;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "exclude": {
+        "files": [
+            "skin.jpg",
+            "extra-styles.scss",
+            "extra-styles.css",
+            "extra-styles.css.map",
+            "extra-styles.php",
+        	"skin-setup.php",
+            "skin-customizer.css",
+            "skin-admin.css",
+        	"skin-demo-importer.php",
+        	"css/__custom.css",
+        	"theme-specific/trx_addons-layouts.php",
+            "templates/content-404.php",
+            "images/404-image.png"
+
+        ],
+        "folders": [
+            "trx_addons/components/cpt/layouts/shortcodes/menu",
+        	"theme-specific/theme-about",
+            "css/font-icons",
+        	"languages"
+        ]
+    }
+}

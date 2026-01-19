@@ -1,0 +1,110 @@
+//Image Box 1
+.pxl-image-box1{
+    .pxl-item--inner{
+        position: relative;
+
+        .pxl-item--image{
+            img{
+                width: 100%;
+            }
+        }
+        .pxl-item--holder{
+            display: flex;
+            justify-content: center;
+         .pxl-item--title{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+            left: -100px;
+            color: #211A31;
+            font-family: 'Syne';
+            font-size: 162.733px;
+            line-height: 1;
+        }
+        .pxl-item--sub{
+            position: absolute;
+            top: 50%;
+            color: $primary_color;
+            border: 3px solid $primary_color;
+            padding: 0 15px;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0 24px;
+            @media #{$max-lg}{
+                font-size: 24px;
+            }
+            @media #{$max-md}{
+                font-size: 16px;
+                border-width: 2px;
+            }
+            @media #{$max-sm}{
+                font-size: 30px;
+                border-width: 3px;
+            }
+            @media #{$max-xsx}{
+                font-size: 20px;
+                border-width: 3px;
+            }
+            @media #{$max-3xs}{
+                font-size: 16px;
+                border-width: 3px;
+            }
+
+        }
+    }
+}
+}
+
+
+
+//Author Box
+.pxl-author-box1{
+    .pxl-item--inner{
+        position: relative;
+        width: fit-content;
+        .pxl-item--signature{
+            img{     
+                position: absolute;
+                bottom: 58px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .pxl-item--genre{
+            position: absolute;
+            left: 50%;
+            bottom: 75px;
+            transform: translateX(-50%);
+            font-family: "Plus Jakarta Sans";
+            font-size: 24px;
+            line-height: 1.6;
+            letter-spacing: 6px;
+            white-space: nowrap;
+            @media #{$max-xl}{
+                font-size: 18px;       
+            }
+        }
+    }
+}
+.pxl-author-box2{
+    .pxl-item--inner{
+        width: fit-content;
+        text-align: center;
+        @media #{$max-xl}{
+            .pxl-item--signature img{
+                width: 190px;
+            }
+        }
+
+        .pxl-item--genre{
+            font-family: "Plus Jakarta Sans";
+            font-size: 17.894px;
+            line-height: 1;
+            letter-spacing: 1.552px;
+            @media #{$max-xl}{
+                font-size: 15px;
+            }
+        }
+    }
+}

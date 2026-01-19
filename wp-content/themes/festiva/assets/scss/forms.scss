@@ -1,0 +1,327 @@
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+    text-overflow: ellipsis;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 1;
+    text-overflow: ellipsis;
+}
+input::-o-placeholder, textarea::-o-placeholder {
+    color: inherit;
+    opacity: 1;
+    text-overflow: ellipsis;
+}
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: inherit;
+    opacity: 1;
+    text-overflow: ellipsis;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea, select, .pxl-select-higthlight, .nice-select {
+    resize:none;
+    background: rgba(255, 255, 255, 0.08);
+    color: $primary_color;
+    padding: 10px 30px;
+    line-height: 1.73;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+    @include transition(all .25s cubic-bezier(.645,.045,.355,1));
+    @include box-shadow(none);
+    @include border-radius(100px);
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+textarea {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    height: 125px;
+    margin: 0;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.13);
+}
+.wpcf7-not-valid-tip{
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 0;
+    &:before{
+        content: '';
+        border-width: 6px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+        position: absolute;
+        top: -12px;
+        left: 15px;
+    }
+}
+.wpcf7 form .wpcf7-response-output{
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+    margin: 50px 0 30px;
+    padding: 6px 20px;
+    @media #{$max-md}{
+        margin: 15px;
+    }
+}
+
+.post-password-form{
+    input[type="password"]{
+        margin: 15px 0;
+    }
+}
+
+.comment-list{
+    list-style: none;
+    .children{
+        list-style: none;
+    }
+}
+
+.comments-area{
+    .comments-title{
+        font-family: 'Syne';
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.3;
+        background: var(--Text-grad, linear-gradient(180deg, $primary_color 0%, #8E7CB3 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 54px;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 41px;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 54px;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(#E100A8, #71009C);
+            border-radius: 15px;
+        }
+    }
+
+    .comment-inner{
+        display: flex;
+        margin-bottom: 67px;
+        img{
+            height: 100%;
+            margin-right: 32px;
+        }
+        .comment-content{
+            .comment-title{
+                font-family: "Plus Jakarta Sans";
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.4;
+                color: $primary_color;
+                .comment-date{
+                    font-size: 14px;
+                    line-height: 1.6;
+                    font-weight: 500;
+                    color: #FF2883;
+                    margin-left: 10px;
+                }
+            }
+            .comment-text p{
+                margin: 2px 0 13px;
+                font-size: 15px;
+                color: $primary_color;
+            }
+            .comment-reply{
+                font-family: 'Inter';
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.56px;
+                text-transform: uppercase;
+                background: var(--purple-grad-5, linear-gradient(90deg, #6B4ACA 0%, #864EAC 100%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                overflow: hidden;
+                a{
+                   position: relative;
+                   padding-bottom: 3px;
+                   &:after{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateX(-100%);
+                    transition: all 0.25s linear;
+                    background: var(--purple-grad-5, linear-gradient(90deg, #6B4ACA 0%, #864EAC 100%));
+                }
+                &:hover{
+                    &::after{
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+.children{
+    margin-left: 97px;
+}
+}
+
+
+
+.contact-form-1{
+    @media #{$max-sm}{
+        padding: 0 35px;
+    }
+    .your-email{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        @media #{$max-sm}{
+           text-align: center;   
+       }
+   }
+   button[type="submit"]{
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    color: $primary_color;
+    background: linear-gradient(90deg, $gradient_color_from 0%, $gradient_color_to 100%);
+    padding: 10px 40px;
+    border-radius: 100px;
+    overflow: hidden;
+    @media #{$max-sm}{
+        position: relative;
+        margin-top: 30px;
+        transform: translatey(0);
+    }
+    span{
+        display: inline-block;
+        transition: all 0.25s linear;
+        opacity: 1;
+    }
+    &:after{
+        position: absolute;
+        content: 'Subscribe';
+        left: 50%;
+        transform: translate(-50%, 150%);
+        transition: all 0.3s linear;
+        opacity: 0;
+    }
+    &:hover{
+        span{
+            transform: scaleY(0);
+            opacity: 0;
+        }
+        &::after{
+            transform: translate(-50%, 0);
+            opacity: 1;
+        }
+    }
+}
+input[type="email"]{
+    background: white;
+    color: #3E4265;
+}
+}
+
+.contact-form-2,.contact-form-3{
+    .row{
+        max-width: 861px;
+        margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"]{
+        border: 2px solid rgba(255, 255, 255, 0.13);
+        padding: 10px 28px;
+    }
+    .button-submit{
+        text-align: center;
+        button[type="submit"]{
+            border-radius: 100px;
+            padding: 16px 55px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 160%;
+            overflow: hidden;
+            color: $primary_color;
+            @media #{$max-sm}{
+                padding: 8px 16px;
+            }
+            span{
+                display: inline-block;
+                transition: all 0.25s linear;
+                opacity: 1;
+            }
+            &:after{
+                position: absolute;
+                content: 'Register Now';
+                left: 50%;
+                transform: translate(-50%, 150%);
+                transition: all 0.25s linear;
+                opacity: 0;
+                width: 100%;
+            }
+            &:hover{
+                span{
+                    transform: scaleY(0);
+                    opacity: 0;
+                }
+                &::after{
+                    transform: translate(-50%, 0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.contact-form-3{
+    button[type="submit"]{
+        margin-top: 20px;
+    }
+}
+
+
+

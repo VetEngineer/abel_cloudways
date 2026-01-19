@@ -1,0 +1,236 @@
+.pxl-countdown {
+    justify-content:center;
+    display: flex;
+    position: relative;
+
+    &.style1{
+        .countdown-item {
+            background : linear-gradient(#E100A8, #71009C);
+            border-radius: 0 45px 0 45px;
+            padding: 15px 35px 30px 30px;
+            width: 126px;
+            height: 130px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media #{$max-lg3}{
+               width: 100px;
+               height: 105px;
+               padding: 0;
+               align-items: center;
+               justify-content: center;
+               display: flex;
+           }
+           @media #{$max-xs} {
+            background: transparent;
+            width: 65px;
+            height: auto;
+            padding: 0;
+        }
+        @include transition(250ms all linear 0ms);
+        text-align: center;
+        position: relative;
+        + .countdown-item {
+            margin-left: 37px;
+            @media #{$max-xs} {
+                margin-left: 10px;
+            }
+            @media #{$max-3xs} {
+                margin-left: 0;
+            }
+            &:before {
+                position: absolute;
+                content: ':';
+                font-family: 'Plus Jakarta Sans',sans-serif;
+                font-size: 44.8px;
+                line-height: normal;
+                color:$primary_color;
+                font-weight: 700;
+                top: 40px;
+                left: -27px;
+                @media (max-width: 575px) {
+                    display: none;
+                }
+            }
+        }
+        .countdown-amount {
+            position: relative;
+            z-index: 2;
+            font-size: 0px;
+            span {
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                color: $primary_color;
+                font-family: 'Plus Jakarta Sans',sans-serif;
+                @media #{$max-lg3}{
+                   font-size: 46px;
+
+               }
+               @media #{$max-xs} {
+                font-size: 40px;
+            }
+            @media #{$max-xsx} {
+                font-size: 24px;
+            }
+        }
+    }
+    .countdown-period {
+        margin-top: -6px;
+        font-family: 'Plus Jakarta Sans',sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        color: $primary_color;
+        @media #{$max-lg3}{
+            font-size: 16px;
+        }
+        @media #{$max-xsx} {
+            font-size: 12px;
+        }
+    }
+}
+}
+
+&.style2,&.style3 {
+    .countdown-item {
+        position: relative;
+        +.countdown-item{
+            &:after{
+                position: absolute;
+                content: ':';
+                font-family: 'Plus Jakarta Sans',sans-serif;
+                font-size: 44.8px;
+                line-height: normal;
+                color:$primary_color;
+                font-weight: 700;
+                top: 15px;
+                left: -34px;
+                @media #{$max-xs} {
+                    display: none;
+                }
+            }
+        }
+        .countdown-item-inner{
+            color: #fff;
+            text-align: center;
+            margin-right: 51px;
+            @media #{$max-sm}{
+                margin-right: 35px;
+            }
+            @media #{$max-xs}{
+                margin-right: 15px;
+            }
+
+            .countdown-amount{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0;
+                width: 110px;
+                height: 110px;
+                background: rgba(255, 255, 255, 0.2);
+                @media #{$max-xs}{
+                    width: 90px;
+                    height: 90px;
+                }
+                @media #{$max-xsx}{
+                    width: 70px ;
+                    height: 70px ;
+                }
+                span{
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: 400;
+                    @media #{$max-xs}{
+                        font-size: 48px;
+                    }
+                    @media #{$max-xsx}{
+                        font-size: 38px;
+                    }
+
+                }
+            }
+            .countdown-period{
+                font-family: "Plus Jakarta Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                margin-top: 12px;
+                @media #{$max-xsx} {
+                    font-size: 12px;
+                }
+            }
+        }
+        &:last-child{
+            .countdown-item-inner{
+                margin: 0;
+            }
+        }
+    }
+}
+&.style3{
+    .countdown-item{
+        +.countdown-item{
+            &:after{
+             @media #{$max-xxl}{
+               top: 10px;
+               left: -22px;
+           }
+       }
+   }
+   .countdown-item-inner{
+    @media #{$max-xxl}{
+        margin-right: 25px;
+    }
+    @media #{$max-xs}{
+        margin-right: 0;
+    }
+    .countdown-amount{
+        width: 127px;
+        height: 127px;
+        @media #{$max-xxb}{
+            width: 105px;
+            height: 105px;
+        }
+        @media #{$max-xxl}{
+            width: 85px;
+            height: 85px;
+        }
+        span{
+            font-family: 'Plus Jakarta Sans';
+            font-weight: 800;
+            font-size: 65px;
+            @media #{$max-xxb}{
+                font-size: 55px; 
+            }
+            @media #{$max-xxl}{
+                font-size: 43px; 
+            }
+
+            @media #{$max-xs}{
+                font-size: 38px; 
+            }
+        }
+    }
+    .countdown-period{
+        font-size: 26px;
+        font-weight: 600;
+        @media #{$max-xxb}{
+            font-size: 22px; 
+        }
+        @media #{$max-xxl}{
+            font-size: 20px; 
+        }
+        @media #{$max-xs}{
+            font-size: 16px; 
+        }
+    }
+}
+}
+}
+
+}

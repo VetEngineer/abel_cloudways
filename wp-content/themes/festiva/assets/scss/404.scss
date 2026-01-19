@@ -1,0 +1,120 @@
+
+.error404 {
+	.pxl-header-content{
+		display: none;
+	}
+	#pxl-main{
+		padding: 0;
+	}
+	.pxl-content--404 {
+		background-repeat: no-repeat;
+		background-position: center center;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		background-size: cover;
+		height: 100vh;
+		@media (max-width: 767px) {
+			margin-top: 0px;
+			padding-bottom: 70px;
+		}
+	}
+	.pxl-error-inner {
+		margin: 0 auto;
+		text-align: center;
+
+		.pxl-error-heading{
+			color: #F2F8FA;
+			text-align: center;
+			font-family: "Plus Jakarta Sans";
+			font-size: 226px;
+			font-weight: 700;
+			line-height: 198.535px;
+			padding-top: 100px;
+		}
+
+		.pxl-error-title {
+			margin-top: 22px;
+			margin-bottom: 22px;
+			text-align: center;
+			font-family: Syne;
+			font-size: 50px;
+			font-weight: 700;
+			line-height: 66px;
+			text-transform: capitalize;
+			background: var(--Text-grad, linear-gradient(180deg, $primary_color 0%, #8E7CB3 100%));
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent; 
+			@media #{$max-sm} {
+				font-size: 36px;
+			}
+		}
+		.pxl-error-description {
+			color:	$primary_color;
+			text-align: center;
+			font-family: Inter;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 32px;
+
+			margin-bottom: 72px;
+			@media (max-width: 767px) {
+				margin-bottom: 30px;
+			}
+		}
+
+		.searchform-wrap {
+			position: relative;
+			max-width: 723px;
+			margin: 0 auto 45px;
+			input {
+				height: 55px;
+				border-radius: 100px;
+				border: 2px solid #30364C;
+				background: rgba(255, 255, 255, 0.08);
+				padding-left: 25px;
+				color: $primary_color;
+			}
+			button {
+				border-radius: 0 100px 100px 0;
+				position: absolute;
+				top:0;
+				right: 0;
+				width: 55px;
+				height: 100%;
+				background: linear-gradient(90deg, #6B4ACA 0%, #864EAC 100%);
+				color: $primary_color;
+				svg path {
+					fill:$primary_color;
+				}
+				&:hover {
+					background-color: $secondary_color;
+				}
+			}
+		}
+		.pxl-error-holder {
+			position: relative;
+			z-index: 99;
+		}
+		.btn {
+			font-family: 'Plus Jakarta Sans';
+			border-radius: 100px;
+			line-height: 60px;
+			text-transform: capitalize;
+			font-size: 16px;
+			font-weight: 600;
+			color: #F2F8FA;
+			background: var(--purple-grad-5, linear-gradient(90deg, #6B4ACA 0%, #864EAC 50%,#E100A8 100%));
+			background-size: 200%,auto;
+			transition: all 0.3s linear;
+			span{
+				position: relative;
+				z-index: 3;
+			}
+			padding: 18px 40px;
+			&:hover{
+				background-position: 100%;
+				transition: all 0.3s linear;
+			}
+		}
+	}
+}

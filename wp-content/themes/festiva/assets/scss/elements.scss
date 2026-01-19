@@ -1,0 +1,127 @@
+// 1. Case Logo widget 
+
+//--------------------------------------------------
+
+// Case Logo widget
+.pxl-logo {
+    a {
+        display: inline-block;
+    }
+    img {
+        width: auto;
+        vertical-align: middle;
+    }
+}
+
+.pxl-text-slip1 {
+    &.text-fill, &.text-stroke{
+        .pxl-item--container {
+            white-space: nowrap;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .pxl-item--text {     
+            margin-bottom: 0;
+            position: relative;
+            background: linear-gradient(90deg, $gradient_color_from 0%, $gradient_color_to 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: "Bebas Neue";
+            font-size: 245.333px;
+            line-height: 246px;
+            font-weight: 400;
+            display: flex;        
+            white-space: nowrap;
+            align-items: center;
+            justify-content: center;
+            svg {
+                margin: 4px 29px 4px 29px;
+                animation: pxl_spin_rv_0 8s ease-out infinite;
+                -webkit-animation: pxl_spin_rv_0 8s ease-out infinite;
+            }
+        }
+        .pxl-item--inner,.pxl-item--inner-font {
+            display: flex;
+            align-items: center;
+        }
+        &.pxl-slide-to-left, &.pxl-slide-to-right {
+            overflow: hidden;
+            .pxl-item--inner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &.pxl-slide-to-left {
+            .pxl-item--inner {            
+                -webkit-animation: move-rtl 30s linear infinite;
+                animation: move-rtl 30s linear infinite;
+            }
+        }
+        &.pxl-slide-to-right {
+            .pxl-item--inner {            
+                -webkit-animation: move-ltr 30s linear infinite;
+                animation: move-ltr 30s linear infinite;
+            }
+        }
+    }
+
+
+    &.text-stroke{
+        .pxl-item--text{
+            font-family: 'Syne';
+            font-size: 110px;
+            font-weight: 700;
+            line-height: 130%;
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 8px transparent;
+            -webkit-text-fill-color: #0A091C;
+            @media #{$max-sm}{
+                font-size: 48px;
+            }
+            svg{
+                @media #{$max-sm}{
+                width: 48px;
+            }
+            }
+        }
+    }
+}
+
+//BR Search Form
+.pxl-search-form {
+    .pxl-searchform-wrap {
+        position: relative;
+        line-height: 160%;
+        border-radius: 30px;
+        width: fit-content;
+        margin: 0 auto;
+        z-index: 9;
+
+    }
+    .pxl-search-field {
+        border: none;
+        background: rgba(255, 255, 255, 0.08);
+        line-height: 160%;
+        border-radius: 30px;
+        min-width: 723px;
+    }
+    .pxl-search-submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        background: linear-gradient(#6B4ACA, #864EAC);
+        border-radius: 0 30px 30px 0;
+        color: $primary_color;
+    }
+    
+}

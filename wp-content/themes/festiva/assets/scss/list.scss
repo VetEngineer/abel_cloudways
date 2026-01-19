@@ -1,0 +1,113 @@
+.pxl-list{
+	//Style List Horizontal
+	&.type-horizontal{
+		display: flex;
+		
+	}
+	.pxl--item{
+		display: flex;
+		margin-right: 40px;
+		a{
+			display: flex;
+		}
+		.pxl-item--icon{
+			
+			&.style-1,&.style-2,&.style-3,&.style-custom{
+				margin-top: 6px;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 11px;
+				background: linear-gradient(180deg, $gradient_color_from 0%, $gradient_color_to 100%);
+				border-radius: 50%;
+				width: 17px;
+				height: 17px;
+				min-width: 17px;
+			}
+			&.style-2{
+				width: 31px;
+				height: 31px;
+				min-width: 31px;
+				background: rgba(134, 78, 172, 0.26);
+				font-size: 16px;
+				@media #{$mm-md} {
+					width: 20px;
+					max-width: 20px;
+					height: 20px;
+					font-size: 12px;
+				}
+			}
+			&.style-3{
+				width: 8px;
+				height: 8px;
+				min-width: 8px;
+				margin-top: 15px;
+			}
+		}
+		&:hover{
+			svg,i{
+				animation: rotateY 0.5s linear;
+			}
+		}
+	}
+	.pxl-item-text, .pxl-sub-text{
+		font-family: 'Plus Jakarta Sans';
+		font-size: 17px;
+		color: $primary_color;
+		font-weight: 700;
+
+	}
+	.pxl-sub-text{
+		font-size: 15px;
+		font-weight: 400;
+		margin-top: 5px;
+	}
+} 
+
+
+//BR Schedule
+.pxl-schedule.pxl-schedule1{
+	display: flex;
+	justify-content: center;
+	.pxl--inner{
+		display: inline-flex;
+		gap: 22px;
+		border-radius: 285.714px;
+		border: 1.429px solid rgba(255, 255, 255, 0.35);
+		background: rgba(255, 255, 255, 0.15);
+		padding: 0 27px;
+		line-height: 58px;
+		@media #{$max-sm}{
+			padding: 0 10px;
+			gap:10px;
+		}
+		.pxl--item{
+			display: flex;
+			align-items: center;
+			border-right: 1.429px solid rgba(255, 255, 255, 0.35);
+			padding-right: 24px;
+			&:last-child{
+				border-right: 0;
+				padding: 0;
+			}
+			i, svg{
+				color: #fff;
+				font-size: 20px;
+				margin-right: 10px;
+				@media #{$max-sm}{
+					font-size: 18px;
+				}
+			}
+			.pxl-item--text{
+				font-family: 'Inter';
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 1.6;
+				color: #fff;
+				@media #{$max-sm}{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

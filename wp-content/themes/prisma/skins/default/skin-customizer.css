@@ -1,0 +1,6 @@
+/* Customizer Styles +++++
+ ++++++++++++++++++++++ */
+ #customize-theme-controls #accordion-section-wc-multivendor-marketplace .accordion-section-title:before {
+    content: '\e821';
+    font-size: 1.15em;
+}

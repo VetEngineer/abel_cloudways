@@ -1,0 +1,82 @@
+.pxl--progressbar {
+    @include transition(width 1.4s ease);
+    width: 0;
+    &.vertical {
+        @include transition(height 1.4s ease);
+        height: 0;
+    }
+}
+.pxl-progressbar-1 {
+    .pxl--progressbar {
+        height: 6px;
+        position: relative;
+        border-radius: 100px;
+        top: 0;
+        background: linear-gradient( 180deg, $gradient_color_from 0%, $gradient_color_to 100%);
+        
+    }
+    .pxl--holder {
+        border-radius: 100px;
+        border: 1px solid rgba(212, 215, 229, 0.3);
+        border-radius: 100px;
+        padding: 2px;
+        height: 12px;
+    }
+    .pxl--percentage {
+        font-size: 15px;
+        color: $primary_color;
+        font-weight: 600;
+        @extend .ft-theme-default;
+    }
+    .pxl--title {
+        font-family: 'Plus Jakarta Sans';
+        font-weight: 700;
+        font-size: 14px;
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+    .pxl--meta {
+        margin-bottom: 5px;
+    }
+    .pxl--item {
+        + .pxl--item {
+            margin-top: 28px;
+        }
+    }
+}
+
+.pxl-progressbar-2 {
+    .pxl--progressbar {
+        border-radius: 100px;
+        height: 8px;
+        position: relative;
+        background: linear-gradient(180deg, $gradient_color_from 0%, $gradient_color_to 100%);
+        top: 0;
+        left:0;
+    }
+    .pxl--holder {
+        border-radius: 100px;
+        height: 8px;
+    }
+    .pxl--percentage {
+        font-size: 17px;
+        color: #0A0A0B;
+        font-weight: 600;
+        @extend .ft-theme-default;
+    }
+    .pxl--title {
+        font-weight: 600;
+        font-size: 17px;
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+    .pxl--meta {
+        margin-bottom: 5px;
+    }
+    .pxl--item {
+        + .pxl--item {
+            margin-top: 28px;
+        }
+    }
+}
+

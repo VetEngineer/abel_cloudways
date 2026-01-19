@@ -1,0 +1,68 @@
+	.pxl-icon-list.pxl-icon1{
+	//Style 1
+	&.style-1 a{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: #322047;
+		&:hover{
+			background: linear-gradient(90deg, $gradient_color_from 0%, $gradient_color_to 100%);
+		}
+	}
+	&.style-2{
+		i{
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 38px;
+			height: 38px;
+			border: 1px solid $primary_color;
+			border-radius: 50%;
+		}
+		.sub_text{
+			color: $primary_color;
+			font-size: 16px;
+			font-family: Inter;
+			line-height: 1.6;
+			font-weight: 400;
+			padding-right: 14px;
+			padding-left: 7px;
+		}
+	}
+	&.style-3{
+		i{
+			font-size: 15px;
+			display: flex;
+			margin-bottom: 25px;
+			justify-content: center;
+			transform: rotate(90deg);
+		}
+	}
+
+	&.ani_zoom {
+		a{
+
+			svg, i{
+				animation: zoom-effect 5s linear infinite;
+			}
+		}
+		
+	}
+	&.ani_spin{
+		svg, i{
+			animation: pxl_spin 3s linear infinite;
+		}
+		
+	}
+
+	&.ani_oscillate{
+		svg, i{
+			transition: all 0.3s linear;
+			animation: oscillate 3s ease infinite alternate;
+		}
+		
+	}
+}
